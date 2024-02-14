@@ -1,0 +1,254 @@
+/* Universal Selector used to target all Elements */
+* {
+    /* Smooth scroll instead of jump */
+    scroll-behavior: smooth;
+    /* Include padding and border to width and height property for more intuitive calculation */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Outline each Element can help while developing the layout structure */
+    /*outline: 2px solid rgba(0, 255, 255, 0.6);*/
+    /* Layout */
+    margin: 0;
+}
+
+/* Root Element Selector used to define Global Variables */
+:root {
+    --color-primary: #16304D;
+    --color-accent: #DB7A64;
+    --color-default-text: #16304D;
+    --color-light-text: #F8F8F8;
+    --color-background: #F8F8F8;
+
+}
+
+/* HTML is usually the root element */
+html {
+    /* Layout */
+    height: 100%;
+    /* Typography */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: var(--color-default-text);
+    background-color: var(--color-background);
+}
+
+/* Typrography Settings */
+/* Base grid is set to 8px equiv. to 0.5rem when the base font size is 16px which is usually the default browser setting.
+To respect the size of the grid-system, make sure to use a multiple of 0.5rem for each vertical layout adjustment. */
+
+h1 {
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.caption {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.tinytext {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+
+/* Accessability Settings */
+
+/* Class for visually hide text for only screen readers to read */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.regular-text {
+    font-weight: normal;
+}
+
+/* Breakpoint for mobile devices */
+@media screen and (max-width: 480px) {}
+
+/* Breakpoint for tablet devices */
+@media screen and (max-width: 768px) and (min-width: 481px) {}
+
+/* Breakpoint for laptop devices */
+@media screen and (max-width: 1024px) and (min-width: 769px) {}
+
+/* Breakpoint for desktop devices */
+@media screen and (min-width: 1440px) {}
+
+
+header {
+    padding: 16px 16px;
+}
+
+#logo-image {
+    height: 100%;
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#hero {
+    padding: 0 1em;
+    margin-bottom: 2em;
+}
+
+.headline {
+    margin-bottom: 1.5em;
+}
+
+
+
+section#offer {
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    padding: 1.5em 1em;
+}
+
+section#offer h2 {
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+}
+
+section#offer li {
+    text-decoration: dotted;
+}
+
+#info-icons-layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5em 0;
+}
+
+.info-icon {
+    width: 104px;
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img.style-image {
+    display: block;
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+
+
+section#contact {
+    padding: 3.5em 1em;
+}
+
+section#contact h2 {
+    margin-bottom: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 32px;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    margin: 8px auto;
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+button.whatsapp {
+    border: none;
+    background-color: #27D045;
+    color: var(--color-light-text);
+}
+
+.fab,
+.fa-solid {
+    margin-right: 8px;
+}
+
+#contact-item-list {
+    margin-top: 48px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.contact-item p {
+    align-self: center;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    padding: 1em;
+    text-align: center;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+footer>p {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    margin: 0.5em 0;
+}
+
+footer>a {
+    text-decoration: underline;
+}

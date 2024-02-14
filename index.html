@@ -14,30 +14,36 @@
 
 <body>
     <header>
-        <img alt="Logo von Fußpflege Zsuzsi" src="./images/fusspflegeZsuzsi-logo.svg" />
+        <img id="logo-image" alt="Logo von Fußpflege Zsuzsi" src="./images/fusspflegeZsuzsi-logo.svg" />
     </header>
 
     <main>
 
         <section id="hero">
-            <h1>Herzlich Willkommen bei Fußpflege Zsuzsi</h1>
-            <h2>Ihrer mobilen Fußpflege aus Frankfurt am Main</h2>
+            <div class="headline">
+                <h1>Herzlich Willkommen bei Fußpflege Zsuzsi</h1>
+                <h2 class="regular-text">Ihrer mobilen Fußpflege aus Frankfurt am Main</h2>
+            </div>
             <p>Ich strebe nach einem komfortablen Fußpflegeerlebnis durch akribische Aufmerksamkeit für Details und hohe
                 Hygienestandards. Mein Ziel ist es, Füße und Geist zu erfrischen und jeden Schritt zu einem verwöhnten
                 Vergnügen zu machen.</p>
         </section>
 
+        <img class="style-image" alt="Hintergrundbild Frankfurt in Silhouette"
+            src="./images/frankfurt-silhouette.svg" />
         <section id="offer">
-            <h2>Mein Angebot</h2>
-            <h3>Fußpflege bei Ihnen zu Hause</h3>
-            <div class="info-icons-layout">
-                <div class="info-icon"><img alt="Icon-Fuß" src="./images/icon-foot.svg" />
+            <div class="headline">
+                <h2>Mein Angebot</h2>
+                <h3>Fußpflege bei Ihnen zu Hause</h3>
+            </div>
+            <div id="info-icons-layout">
+                <div class="info-icon"><img class="icon" alt="Icon-Fuß" src="./images/icon-foot.svg" />
                     <p>Fußpflege</p>
                 </div>
-                <div class="info-icon"><img alt="Icon-Sanduhr" src="./images/icon-hourglass.svg" />
+                <div class="info-icon"><img class="icon" alt="Icon-Sanduhr" src="./images/icon-hourglass.svg" />
                     <p>30 Minuten</p>
                 </div>
-                <div class="info-icon"><img alt="Icon-Euro" src="./images/icon-euro.svg" />
+                <div class="info-icon"><img class="icon" alt="Icon-Euro" src="./images/icon-euro.svg" />
                     <p>40 Euro</p>
                 </div>
             </div>
@@ -54,12 +60,12 @@
             <h2>Kontakt</h2>
             <p>Bei <strong>Fragen</strong> oder zur <strong>Terminvereinbarung</strong> erreichen Sie mich am besten
                 über WhatsApp</p>
-            <button><i class="fab fa-whatsapp"></i>WhatsApp</button>
+            <button class="whatsapp"><i class="fab fa-whatsapp"></i>WhatsApp</button>
             <p>Aber auch per Anruf oder Email</p>
             <button><i class="fa-solid fa-phone"></i>Anruf</button>
             <button><i class="fa-solid fa-envelope"></i>Email</button>
-            <div id="contact-list">
-                <div>
+            <div id="contact-item-list">
+                <div class="contact-item">
                     <img alt="Icon-Haus" src="./images/icon-home.svg" />
                     <address>
                         <p>Zsuzsanna Hopffgarten</p>
@@ -67,11 +73,11 @@
                         <p>665656 Frankfurt am Main</p>
                     </address>
                 </div>
-                <div>
+                <div class="contact-item">
                     <img alt="Icon-Phone" src="./images/icon-phone.svg" />
                     <p>+49 178 5784 224</p>
                 </div>
-                <div>
+                <div class="contact-item">
                     <img alt="Icon-Mail" src="./images/icon-mail.svg" />
                     <p>fusspflegezsuzsi@yahoo.de</p>
                 </div>
@@ -80,6 +86,7 @@
 
     </main>
 
+    <img class="style-image" alt="Hintergrundbild Frankfurt in Silhouette" src="./images/frankfurt-silhouette.svg" />
     <footer>
         <a>Impressum</a>
         <p>Copyright <span>&copy;</span> This Year Zsuzsanna Hopffgarten</p>
