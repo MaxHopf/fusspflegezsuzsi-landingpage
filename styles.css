@@ -252,3 +252,24 @@ footer>p {
 footer>a {
     text-decoration: underline;
 }
+
+
+button.floating {
+    width: 72px;
+    height: 72px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 48px;
+    right: 24px;
+    border: none;
+    border-radius: 64px;
+    background-color: #27D045;
+    box-shadow: 1px 5px 10px 0px #092e0f4e;
+}
+
+button.floating i {
+    margin: 0 auto;
+    font-size: 40px;
+    color: var(--color-light-text)
+}
