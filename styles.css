@@ -200,12 +200,14 @@ button {
     margin: 8px auto;
     background-color: transparent;
     color: var(--color-primary);
+    box-shadow: 0 5px 10px 0 #16304d22;
 }
 
 button.whatsapp {
     border: none;
     background-color: #177D2A;
     color: var(--color-light-text);
+    box-shadow: 0 5px 10px 0 #177D2A22;
 }
 
 .fab,
@@ -267,8 +269,8 @@ button.floating {
     right: 24px;
     border: none;
     border-radius: 64px;
-    background-color: #27D045;
-    box-shadow: 1px 5px 10px 0px #092e0f4e;
+    background-color: #177D2A;
+    box-shadow: 1px 5px 10px 0px #1a842c4e;
 }
 
 button.floating i {
