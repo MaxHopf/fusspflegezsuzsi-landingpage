@@ -106,6 +106,8 @@ p {
 header {
     padding-top: 16px;
     padding-left: 16px;
+    padding-bottom: 16px;
+    background-color: var(--color-primary);
 }
 
 #logo-image {
@@ -204,7 +206,8 @@ section#offer li {
 #info-icons-layout {
     display: flex;
     justify-content: space-between;
-    margin: 1.5em 0;
+    margin: 40px auto;
+    max-width: 560px;
 }
 
 .info-icon {
@@ -227,20 +230,20 @@ img.style-image {
 
 
 
-
-
-section#contact {
-    padding: 3.5em 1em;
+section#about {
+    padding: 0 16px;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
-section#contact h2 {
-    margin-bottom: 1em;
+#about>h2 {
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    margin-bottom: 8px;
 }
-
-
 
 #contact-item-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 .contact-item {
@@ -254,9 +257,7 @@ section#contact h2 {
     align-self: center;
 }
 
-address {
-    font-style: normal;
-}
+
 
 
 
@@ -302,20 +303,101 @@ button.floating i {
 
 
 
+@media screen and (min-width: 420px) {
+    #handy-button {
+        display: none;
+    }
+}
 
-/* Breakpoint for mobile devices */
-@media screen and (min-width: 560px) {
-    section#offer {
-        padding: 1.5em 10%;
+@media screen and (min-width: 600px) {
+    img.style-image {
+        display: none;
     }
 
-    section#contact {
-        padding: 3.5em 10%;
+    header {
+        padding-top: 16px;
+        padding-left: 20%;
+        margin-bottom: 64px;
+    }
+
+    #logo-image {
+        width: 320px;
+    }
+
+    section#hero {
+        flex-direction: row;
+        padding: 0 20%;
+    }
+
+    div.heroText {
+        width: 50%;
+
+    }
+
+    div.callToAction {
+        width: 50%;
+    }
+
+    #hero h1,
+    h2 {
+        margin: 0;
+    }
+
+    #hero h1 {
+        line-height: 36px;
+        letter-spacing: -0.4px;
+    }
+
+    #hero h2 {
+        line-height: 36px;
+        letter-spacing: -0.25px;
+    }
+
+    #hero p {
+        line-height: 32px;
+        letter-spacing: 0.25px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 24px;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 32px;
+        border: 2px solid var(--color-primary);
+        border-radius: 8px;
+        margin: 0 auto;
+        background-color: transparent;
+        color: var(--color-primary);
+        box-shadow: 0 5px 10px 0 #16304d22;
+    }
+
+    button.whatsapp {
+        display: none;
+    }
+
+    .fab,
+    .fa-solid {
+        position: relative;
+        top: 2px;
+        margin-right: 8px;
+        font-size: 24px;
+    }
+
+}
+
+
+
+/* Breakpoint for mobile devices */
+@media screen and (min-width: 480px) and (max-width: 560px) {
+    #info-icons-layout {
+        width: 90%;
+        margin: 40px auto;
     }
 }
 
 /* Breakpoint for tablet devices */
-@media screen and (min-width: 640px) {}
+@media screen and (min-width: 560px) {}
 
 /* Breakpoint for laptop devices */
 @media screen and (max-width: 1024px) and (min-width: 769px) {}
@@ -329,7 +411,7 @@ body.impressum {
 }
 
 main.impressum {
-    padding: 0 32px;
+    padding: 0 16px;
     padding-bottom: 128px;
 }
 
@@ -344,6 +426,7 @@ h1.impressum {
 
 address.impressum {
     margin-bottom: 16px;
+    font-style: normal;
 
 }
 
