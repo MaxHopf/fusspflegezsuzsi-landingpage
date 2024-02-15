@@ -103,10 +103,9 @@ p {
     font-weight: normal;
 }
 
-
-
 header {
-    padding: 16px 16px;
+    padding-top: 16px;
+    padding-left: 16px;
 }
 
 #logo-image {
@@ -114,13 +113,76 @@ header {
 }
 
 section#hero {
-    padding: 0 1em;
-    margin-bottom: 2em;
+    padding: 0 16px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.headline {
-    margin-bottom: 1.5em;
+div.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
+
+div.callToAction {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+#hero h1,
+h2 {
+    margin: 0;
+}
+
+#hero h1 {
+    line-height: 36px;
+    letter-spacing: -0.4px;
+}
+
+#hero h2 {
+    line-height: 36px;
+    letter-spacing: -0.25px;
+}
+
+#hero p {
+    line-height: 32px;
+    letter-spacing: 0.25px;
+}
+
+button {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 32px;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: var(--color-primary);
+    box-shadow: 0 5px 10px 0 #16304d22;
+}
+
+button.whatsapp {
+    border: none;
+    background-color: #177D2A;
+    color: var(--color-light-text);
+    box-shadow: 0 5px 10px 0 #177D2A22;
+}
+
+.fab,
+.fa-solid {
+    position: relative;
+    top: 2px;
+    margin-right: 8px;
+    font-size: 24px;
+}
+
 
 
 
@@ -173,34 +235,7 @@ section#contact h2 {
     margin-bottom: 1em;
 }
 
-button {
-    width: 100%;
-    padding: 12px 24px;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 32px;
-    border: 2px solid var(--color-primary);
-    border-radius: 8px;
-    margin: 8px auto;
-    background-color: transparent;
-    color: var(--color-primary);
-    box-shadow: 0 5px 10px 0 #16304d22;
-}
 
-button.whatsapp {
-    border: none;
-    background-color: #177D2A;
-    color: var(--color-light-text);
-    box-shadow: 0 5px 10px 0 #177D2A22;
-}
-
-.fab,
-.fa-solid {
-    position: relative;
-    top: 2px;
-    margin-right: 8px;
-    font-size: 24px;
-}
 
 #contact-item-list {
     margin-top: 48px;
