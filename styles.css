@@ -103,17 +103,6 @@ p {
     font-weight: normal;
 }
 
-/* Breakpoint for mobile devices */
-@media screen and (max-width: 480px) {}
-
-/* Breakpoint for tablet devices */
-@media screen and (max-width: 768px) and (min-width: 481px) {}
-
-/* Breakpoint for laptop devices */
-@media screen and (max-width: 1024px) and (min-width: 769px) {}
-
-/* Breakpoint for desktop devices */
-@media screen and (min-width: 1440px) {}
 
 
 header {
@@ -277,4 +266,54 @@ button.floating i {
     margin: 0 auto;
     font-size: 40px;
     color: var(--color-light-text)
+}
+
+
+
+
+/* Breakpoint for mobile devices */
+@media screen and (min-width: 560px) {
+    section#offer {
+        padding: 1.5em 10%;
+    }
+
+    section#contact {
+        padding: 3.5em 10%;
+    }
+}
+
+/* Breakpoint for tablet devices */
+@media screen and (min-width: 640px) {}
+
+/* Breakpoint for laptop devices */
+@media screen and (max-width: 1024px) and (min-width: 769px) {}
+
+/* Breakpoint for desktop devices */
+@media screen and (min-width: 1440px) {}
+
+
+body.impressum {
+    scroll-behavior: unset;
+}
+
+main.impressum {
+    padding: 0 32px;
+    padding-bottom: 128px;
+}
+
+img.impressum {
+    position: fixed;
+    bottom: 0;
+}
+
+h1.impressum {
+    margin-bottom: 32px;
+}
+
+address.impressum {
+    margin-bottom: 16px;
+}
+
+div.impressum {
+    margin-bottom: 16px;
 }
