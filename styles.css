@@ -115,16 +115,16 @@ header {
 section#hero {
     padding: 0 16px;
     margin-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-div.headline {
+div.heroText {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px
 }
 
 div.callToAction {
@@ -224,6 +224,8 @@ img.style-image {
     width: 100%;
     margin-bottom: -5px;
 }
+
+
 
 
 
