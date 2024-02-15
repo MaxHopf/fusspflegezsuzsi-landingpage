@@ -326,8 +326,12 @@ footer.impressum {
     background-color: transparent;
 }
 
-button.impressum {
+a.impressum {
     display: flex;
+    position: fixed;
+    bottom: 48px;
+    right: 24px;
+    border-radius: 64px;
     background-color: var(--color-primary);
     box-shadow: 1px 5px 10px 0px #1a2f844e;
     width: 64px;
@@ -337,7 +341,16 @@ button.impressum {
     justify-content: center;
 }
 
-button.impressum>img {
+a:link,
+a:visited {
+    color: var(--color-light-text);
+}
+
+a:hover {
+    color: red;
+}
+
+a.impressum>img {
     width: 32px;
     height: auto;
 }
