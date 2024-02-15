@@ -110,12 +110,7 @@ header {
 }
 
 #logo-image {
-    height: 100%;
-    width: 100%;
-    max-width: 320px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 210px;
 }
 
 section#hero {
