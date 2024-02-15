@@ -312,8 +312,32 @@ h1.impressum {
 
 address.impressum {
     margin-bottom: 16px;
+
 }
 
 div.impressum {
     margin-bottom: 16px;
+}
+
+footer.impressum {
+    display: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+button.impressum {
+    display: flex;
+    background-color: var(--color-primary);
+    box-shadow: 1px 5px 10px 0px #1a2f844e;
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+button.impressum>img {
+    width: 32px;
+    height: auto;
 }
