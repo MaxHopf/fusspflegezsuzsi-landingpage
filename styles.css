@@ -103,6 +103,10 @@ p {
     font-weight: normal;
 }
 
+.only-desktop {
+    display: none;
+}
+
 header {
     padding-top: 16px;
     padding-left: 16px;
@@ -303,10 +307,33 @@ button.floating i {
 
 
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 450px) {
     #handy-button {
         display: none;
     }
+}
+
+@media screen and (min-width: 720px) {
+    section#hero {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 32px;
+        margin: 48px auto;
+        max-width: 900px;
+    }
+
+    div.heroText {
+        width: 50%;
+    }
+
+    div.callToAction {
+        width: 50%;
+    }
+
+    .only-mobile {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -324,64 +351,50 @@ button.floating i {
         width: 320px;
     }
 
-    section#hero {
-        flex-direction: row;
-        padding: 0 20%;
-    }
 
-    div.heroText {
-        width: 50%;
 
-    }
 
-    div.callToAction {
-        width: 50%;
-    }
 
-    #hero h1,
-    h2 {
-        margin: 0;
-    }
 
-    #hero h1 {
-        line-height: 36px;
-        letter-spacing: -0.4px;
-    }
 
-    #hero h2 {
-        line-height: 36px;
-        letter-spacing: -0.25px;
-    }
-
-    #hero p {
-        line-height: 32px;
-        letter-spacing: 0.25px;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px 24px;
-        font-size: 1em;
-        font-weight: bold;
-        line-height: 32px;
-        border: 2px solid var(--color-primary);
-        border-radius: 8px;
+    section#offer {
+        background-color: var(--color-primary);
+        color: var(--color-light-text);
+        padding: 48px 20%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
         margin: 0 auto;
-        background-color: transparent;
-        color: var(--color-primary);
-        box-shadow: 0 5px 10px 0 #16304d22;
+        gap: 32px;
     }
 
-    button.whatsapp {
-        display: none;
+    .right img {
+        width: 450px;
     }
 
-    .fab,
-    .fa-solid {
-        position: relative;
-        top: 2px;
-        margin-right: 8px;
-        font-size: 24px;
+    section#offer ul {
+        padding: 0;
+    }
+
+
+    #info-icons-layout {
+        max-width: 450px;
+        min-width: 350px;
+    }
+
+
+    .only-desktop {
+        display: block;
+    }
+
+
+
+
+
+    section#about {
+        padding: 0 32px;
+        margin: 48px auto;
+        max-width: 900px;
     }
 
 }

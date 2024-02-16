@@ -30,37 +30,40 @@
             </div>
             <div class="callToAction">
                 <p>Jetzt anfragen per...</p>
-                <button class="whatsapp"><i class="fab fa-whatsapp"></i>WhatsApp</button>
-                <p>...oder per Anruf bzw. Email</p>
-                <button><i class="fa-solid fa-phone"></i>Anruf</button>
-                <button><i class="fa-solid fa-envelope"></i>Email</button>
+                <button class="whatsapp only-mobile"><i class="fab fa-whatsapp"></i>WhatsApp</button>
+                <p class="only-mobile">...oder per Anruf bzw. Email</p>
+                <button id="call-button only-mobile"><i class="fa-solid fa-phone"></i>Anruf</button>
+                <button id="mail-button"><i class="fa-solid fa-envelope"></i>Email</button>
             </div>
         </section>
 
         <img class="style-image" alt="Hintergrundbild Frankfurt in Silhouette"
             src="./images/frankfurt-silhouette.svg" />
         <section id="offer">
-            <div class="headline">
+            <div class="left">
                 <h2>Mein Angebot</h2>
                 <h3>Fußpflege bei Ihnen zu Hause</h3>
+                <div id="info-icons-layout">
+                    <div class="info-icon"><img class="icon" alt="Icon-Fuß" src="./images/icon-foot.svg" />
+                        <p>Fußpflege</p>
+                    </div>
+                    <div class="info-icon"><img class="icon" alt="Icon-Sanduhr" src="./images/icon-hourglass.svg" />
+                        <p>30 Minuten</p>
+                    </div>
+                    <div class="info-icon"><img class="icon" alt="Icon-Euro" src="./images/icon-euro.svg" />
+                        <p>40 Euro</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>schneiden und kürzen der Nägel</li>
+                    <li>reinigen der Nagelpfalz und Nagelhaut</li>
+                    <li>Hornhautabtragung</li>
+                    <li>Aubschlusspflege</li>
+                </ul>
             </div>
-            <div id="info-icons-layout">
-                <div class="info-icon"><img class="icon" alt="Icon-Fuß" src="./images/icon-foot.svg" />
-                    <p>Fußpflege</p>
-                </div>
-                <div class="info-icon"><img class="icon" alt="Icon-Sanduhr" src="./images/icon-hourglass.svg" />
-                    <p>30 Minuten</p>
-                </div>
-                <div class="info-icon"><img class="icon" alt="Icon-Euro" src="./images/icon-euro.svg" />
-                    <p>40 Euro</p>
-                </div>
+            <div class="right only-desktop">
+                <img alt="" src="./images/pexels-stephanie-allen-4085453.jpg" />
             </div>
-            <ul>
-                <li>schneiden und kürzen der Nägel</li>
-                <li>reinigen der Nagelpfalz und Nagelhaut</li>
-                <li>Hornhautabtragung</li>
-                <li>Aubschlusspflege</li>
-            </ul>
         </section>
 
         <section id="about">
