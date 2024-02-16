@@ -1,102 +1,75 @@
-/* Universal Selector used to target all Elements */
+/* Global Settings*/
 * {
-    /* Smooth scroll instead of jump */
     scroll-behavior: smooth;
-    /* Include padding and border to width and height property for more intuitive calculation */
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    /* Outline each Element can help while developing the layout structure */
-    /*outline: 2px solid rgba(0, 255, 255, 0.6);*/
-    /* Layout */
     margin: 0;
 }
 
-/* Root Element Selector used to define Global Variables */
+/* Global Variables*/
 :root {
     --color-primary: #16304D;
     --color-accent: #DB7A64;
     --color-default-text: #16304D;
     --color-light-text: #F8F8F8;
     --color-background: #F8F8F8;
-
 }
 
-/* HTML is usually the root element */
+/* HTML */
 html {
-    /* Layout */
     height: 100%;
-    /* Typography */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    line-height: 1.5rem;
+    line-height: 24px;
     color: var(--color-default-text);
     background-color: var(--color-background);
 }
 
-/* Typrography Settings */
-/* Base grid is set to 8px equiv. to 0.5rem when the base font size is 16px which is usually the default browser setting.
-To respect the size of the grid-system, make sure to use a multiple of 0.5rem for each vertical layout adjustment. */
-
+/* General Typography */
 h1 {
-    font-size: 1.5625rem;
-    line-height: 2rem;
+    font-size: 28px;
+    line-height: 32px;
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 h2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 22px;
+    line-height: 24px;
     font-weight: bold;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 h3 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: bold;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.7rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .caption {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
 
 .tinytext {
-    font-size: 0.6875rem;
-    line-height: 1rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-
-
-/* Accessability Settings */
-
-/* Class for visually hide text for only screen readers to read */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .regular-text {
@@ -107,59 +80,7 @@ p {
     display: none;
 }
 
-header {
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-bottom: 16px;
-    background-color: var(--color-primary);
-}
-
-#logo-image {
-    width: 210px;
-}
-
-section#hero {
-    padding: 0 16px;
-    margin-top: 16px;
-    margin-bottom: 48px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-div.heroText {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
-}
-
-div.callToAction {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-}
-
-#hero h1,
-h2 {
-    margin: 0;
-}
-
-#hero h1 {
-    line-height: 36px;
-    letter-spacing: -0.4px;
-}
-
-#hero h2 {
-    line-height: 36px;
-    letter-spacing: -0.25px;
-}
-
-#hero p {
-    line-height: 32px;
-    letter-spacing: 0.25px;
-}
-
+/* Buttons */
 button {
     width: 100%;
     padding: 12px 24px;
@@ -189,102 +110,6 @@ button.whatsapp {
     font-size: 24px;
 }
 
-
-
-
-section#offer {
-    background-color: var(--color-primary);
-    color: var(--color-light-text);
-    padding: 1.5em 1em;
-}
-
-section#offer h2 {
-    margin-bottom: 1.5em;
-    margin-top: 0.5em;
-}
-
-section#offer li {
-    text-decoration: dotted;
-}
-
-#info-icons-layout {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto;
-    max-width: 560px;
-}
-
-.info-icon {
-    width: 104px;
-    text-align: center;
-}
-
-.icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-img.style-image {
-    display: block;
-    width: 100%;
-    margin-bottom: -5px;
-}
-
-
-
-section#about {
-    padding: 0 16px;
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
-
-#about>h2 {
-    line-height: 36px;
-    letter-spacing: -0.25px;
-    margin-bottom: 8px;
-}
-
-#contact-item-list {
-    margin-top: 32px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin: 16px 0;
-}
-
-.contact-item p {
-    align-self: center;
-}
-
-
-
-
-
-footer {
-    background-color: var(--color-primary);
-    color: var(--color-light-text);
-    padding: 1em;
-    text-align: center;
-    font-size: 0.8125rem;
-    line-height: 1rem;
-}
-
-footer>p {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-    margin: 0.5em 0;
-}
-
-footer>a {
-    text-decoration: underline;
-}
-
-
 button.floating {
     width: 72px;
     height: 72px;
@@ -305,6 +130,126 @@ button.floating i {
     color: var(--color-light-text)
 }
 
+/* Header Section */
+header {
+    padding: 16px;
+    background-color: var(--color-primary);
+}
+
+#logo-image {
+    width: 210px;
+}
+
+/* Hero Section*/
+section#hero {
+    padding: 0 16px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+div.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+div.callToAction {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+#hero h1 {
+    line-height: 36px;
+    letter-spacing: -0.4px;
+}
+
+#hero h2 {
+    line-height: 36px;
+    letter-spacing: -0.25px;
+}
+
+#hero p {
+    line-height: 32px;
+    letter-spacing: 0.25px;
+}
+
+/* Offer Section */
+section#offer {
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    padding: 24px 16px 48px 16px;
+}
+
+section#offer li {
+    text-decoration: dotted;
+}
+
+section#offer ul {
+    padding-left: 16px;
+}
+
+#info-icons-layout {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    max-width: 560px;
+}
+
+.info-icon {
+    width: 104px;
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.style-image {
+    display: block;
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+/* About Section */
+section#about {
+    padding: 0 16px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+#contact-item-list {
+    margin-top: 32px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.contact-item p {
+    align-self: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
+    padding: 16px;
+    text-align: center;
+}
+
+footer>a {
+    text-decoration: underline;
+}
 
 
 @media screen and (min-width: 450px) {
@@ -356,20 +301,6 @@ button.floating i {
         width: 320px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     section#about {
         padding: 0 32px;
         margin: 48px auto;
@@ -411,22 +342,8 @@ button.floating i {
 }
 
 
-/* Breakpoint for mobile devices */
-@media screen and (min-width: 480px) and (max-width: 560px) {
-    #info-icons-layout {
-        width: 90%;
-        margin: 40px auto;
-    }
-}
 
-/* Breakpoint for tablet devices */
-@media screen and (min-width: 560px) {}
 
-/* Breakpoint for laptop devices */
-@media screen and (max-width: 1024px) and (min-width: 769px) {}
-
-/* Breakpoint for desktop devices */
-@media screen and (min-width: 1440px) {}
 
 
 body.impressum {
@@ -491,4 +408,22 @@ a:hover {
 a.impressum>img {
     width: 32px;
     height: auto;
+}
+
+
+
+
+/* Accessability Settings */
+
+/* Class for visually hide text for only screen readers to read */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
