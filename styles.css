@@ -100,21 +100,6 @@ button {
     box-shadow: 0 5px 10px 0 #16304d22;
 }
 
-button.whatsapp {
-    border: none;
-    background-color: #177D2A;
-    color: var(--color-light-text);
-    box-shadow: 0 5px 10px 0 #177D2A22;
-}
-
-.fab,
-.fa-solid {
-    position: relative;
-    top: 2px;
-    margin-right: 8px;
-    font-size: 24px;
-}
-
 button.floating {
     width: 72px;
     height: 72px;
@@ -304,13 +289,6 @@ a.impressum {
 a.impressum>.arrow-left-img {
     width: 32px;
     height: auto;
-}
-
-/* Media Breakpoints */
-@media screen and (min-width: 450px) {
-    #handy-button {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 600px) {
