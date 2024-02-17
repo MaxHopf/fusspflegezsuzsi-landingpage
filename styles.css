@@ -226,12 +226,16 @@ section#about {
 .contact-item {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 8px;
     margin: 16px 0;
 }
 
 .contact-item p {
     align-self: center;
+}
+
+.contact-item>img {
+    width: 56px;
 }
 
 /* Footer Section */
@@ -306,6 +310,12 @@ a.impressum>.arrow-left-img {
         display: flex;
         flex-direction: column;
         gap: 8px;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .contact-item>img {
+        width: 40px;
     }
 }
 
