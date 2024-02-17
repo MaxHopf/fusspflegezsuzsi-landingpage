@@ -182,6 +182,7 @@ section#offer {
 
 section#offer li {
     text-decoration: dotted;
+    line-height: 32px;
 }
 
 section#offer ul {
@@ -309,7 +310,6 @@ a.impressum>.arrow-left-img {
     .contact-item>img {
         width: 40px;
     }
-
 }
 
 @media screen and (max-width: 400px) {
