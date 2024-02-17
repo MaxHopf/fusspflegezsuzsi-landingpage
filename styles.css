@@ -296,6 +296,12 @@ a.impressum>.arrow-left-img {
     height: auto;
 }
 
+@media screen and (min-width: 450px) {
+    .only-mobile {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 600px) {
     img.style-image {
         display: none;
@@ -337,14 +343,9 @@ a.impressum>.arrow-left-img {
     }
 
     div.callToAction {
-        padding-top: 64px;
         width: 50%;
         gap: 8px;
         align-self: flex-end;
-    }
-
-    .only-mobile {
-        display: none;
     }
 
     .heroText>h2 {
