@@ -92,11 +92,11 @@ button {
     font-size: 1em;
     font-weight: bold;
     line-height: 32px;
-    border: 2px solid var(--color-primary);
+    border: none;
     border-radius: 8px;
     margin: 0 auto;
-    background-color: transparent;
-    color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-light-text);
     box-shadow: 0 5px 10px 0 #16304d22;
 }
 
