@@ -168,6 +168,11 @@ div.callToAction {
     letter-spacing: 0.25px;
 }
 
+#hero .phone-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /* Offer Section */
 section#offer {
     background-color: var(--color-primary);
