@@ -171,6 +171,12 @@ div.callToAction {
 #hero .phone-number {
     font-size: 24px;
     font-weight: bold;
+    padding-right: 16px;
+}
+
+.phone-number:hover {
+    color: #cb6f05;
+    cursor: pointer;
 }
 
 /* Offer Section */
@@ -257,7 +263,7 @@ footer>a:visited {
 }
 
 footer>a:hover {
-    color: red;
+    color: var(--color-accent);
 }
 
 /* Impressum Page */
@@ -312,7 +318,7 @@ a.impressum>.arrow-left-img {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     div.contact-item {
         flex-direction: column;
         align-items: center;
@@ -325,7 +331,7 @@ a.impressum>.arrow-left-img {
     }
 }
 
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 421px) {
     .contact-item>img {
         width: 40px;
     }
@@ -381,6 +387,11 @@ a.impressum>.arrow-left-img {
         width: 50%;
         gap: 8px;
         align-self: flex-end;
+        align-items: flex-start;
+    }
+
+    div.callToAction p {
+        text-align: left;
     }
 
     .heroText>h2 {
