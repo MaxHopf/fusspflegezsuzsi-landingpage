@@ -31,8 +31,8 @@ h1 {
     font-size: 28px;
     line-height: 32px;
     font-weight: bold;
-    margin-top: 16px;
-    margin-bottom: 8px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 h2 {
@@ -82,8 +82,14 @@ p {
 }
 
 .center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
+}
 
+.align-left {
+    text-align: left;
 }
 
 /* Class for visually hide text for only screen readers to read */
@@ -109,59 +115,40 @@ header {
     width: 210px;
 }
 
+/* Hero Section */
 
-
-
-
-
-/* Hero Section*/
 section#hero {
-    padding: 0 16px;
+    padding: 0 16px 32px 16px;
+    max-width: 640px;
+}
+
+#hero>h1 {
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+#hero>p {
+    margin: 8px 0;
+}
+
+#hero>img {
     margin-top: 16px;
-    margin-bottom: 48px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    margin-bottom: 16px;
 }
 
-div.heroText {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
+#hero .less-line-height {
+    line-height: 28px;
 }
 
-div.callToAction {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-}
-
-#hero h1 {
-    line-height: 36px;
-    letter-spacing: -0.4px;
-}
-
-#hero h2 {
-    line-height: 36px;
-    letter-spacing: -0.25px;
-}
-
-#hero p {
-    line-height: 32px;
-    letter-spacing: 0.25px;
-}
-
-#hero .phone-number {
+#hero .emphasize {
     font-size: 24px;
     font-weight: bold;
-    padding-right: 16px;
 }
 
-.phone-number:hover {
-    color: #cb6f05;
-    cursor: pointer;
-}
+
+
+
+
 
 /* Offer Section */
 section#offer {
