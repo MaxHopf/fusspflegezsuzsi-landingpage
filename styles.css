@@ -122,9 +122,9 @@ header {
 /* Hero Section */
 
 section#hero {
-    margin: 48px 0 96px 0;
+    margin: 48px auto 96px auto;
     padding: 0 16px 0 16px;
-    max-width: 640px;
+    max-width: 800px;
 }
 
 #hero>h1 {
@@ -147,7 +147,6 @@ section#hero {
 }
 
 /* Offer Section */
-
 #offer p {
     margin: 8px 0;
 }
@@ -198,6 +197,8 @@ section#offer {
     background-color: var(--color-background);
     padding: 16px;
     border-radius: 16px;
+    max-width: 640px;
+    margin: 0 auto 0 auto;
 }
 
 #offers {
@@ -214,7 +215,9 @@ br {
 }
 
 section#about {
-    margin: 96px 16px 96px 16px;
+    padding: 0 16px 0 16px;
+    margin: 96px auto 96px auto;
+    max-width: 800px;
 }
 
 /* Contact Section*/
@@ -253,6 +256,29 @@ footer>a:visited {
 footer>a:hover {
     color: var(--color-accent);
 }
+
+@media screen and (min-width: 481px) {
+    .only-mobile {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Impressum Page */
 main.impressum {
