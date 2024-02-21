@@ -40,7 +40,7 @@ h2 {
     line-height: 24px;
     font-weight: bold;
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 h3 {
@@ -147,6 +147,11 @@ section#hero {
 
 /* Offer Section */
 
+#offer p {
+    margin: 8px 0;
+}
+
+/* dot leader */
 .entry {
     display: flex;
 }
@@ -155,8 +160,6 @@ section#hero {
 .right {
     white-space: nowrap;
 }
-
-.dots {}
 
 .dots {
     height: 2em;
@@ -167,7 +170,6 @@ section#hero {
     /* where magic happens */
     color: #ffffff;
     letter-spacing: 3px;
-
 }
 
 .dots:after {
@@ -179,6 +181,15 @@ section#hero {
     bottom: -2px;
 }
 
+#offer .offer {
+    padding-top: 16px;
+}
+
+#offers {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 
 
 
