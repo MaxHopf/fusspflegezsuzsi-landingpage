@@ -122,7 +122,8 @@ header {
 /* Hero Section */
 
 section#hero {
-    padding: 0 16px 32px 16px;
+    margin: 48px 0 96px 0;
+    padding: 0 16px 0 16px;
     max-width: 640px;
 }
 
@@ -176,7 +177,7 @@ section#hero {
     padding-left: 8px;
     padding-right: 4px;
     font-size: 6px;
-    content: '• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •';
+    content: '• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •';
     position: relative;
     bottom: -2px;
 }
@@ -197,7 +198,6 @@ section#offer {
     background-color: var(--color-background);
     padding: 16px;
     border-radius: 16px;
-
 }
 
 #offers {
@@ -207,35 +207,30 @@ section#offer {
     gap: 32px;
 }
 
+/* About Section*/
+br {
+    display: block;
+    margin-bottom: 16px;
+}
 
-
-
-
-
-/* About Section */
 section#about {
-    padding: 0 16px;
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin: 96px 16px 96px 16px;
 }
 
-#contact-item-list {
-    margin: 32px auto 0 auto;
-}
-
-.contact-item {
+/* Contact Section*/
+section#contact {
+    margin: 96px 0 96px 0;
     display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    margin: 16px 0;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.contact-item p {
-    align-self: center;
+#contact h2 {
+    margin-bottom: 0;
 }
 
-.contact-item>img {
-    width: 56px;
+.fa-whatsapp {
+    font-size: 22px;
 }
 
 /* Footer Section */
