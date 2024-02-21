@@ -145,7 +145,39 @@ section#hero {
     font-weight: bold;
 }
 
+/* Offer Section */
 
+.entry {
+    display: flex;
+}
+
+.left,
+.right {
+    white-space: nowrap;
+}
+
+.dots {}
+
+.dots {
+    height: 2em;
+    /* very important */
+    overflow: hidden;
+    /* very important */
+    word-wrap: break-word;
+    /* where magic happens */
+    color: #ffffff;
+    letter-spacing: 3px;
+
+}
+
+.dots:after {
+    padding-left: 16px;
+    padding-right: 8px;
+    font-size: 10px;
+    content: '• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •';
+    position: relative;
+    bottom: -2px;
+}
 
 
 
