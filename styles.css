@@ -306,7 +306,22 @@ div#impressum-contact {
     margin-bottom: 16px;
 }
 
-a.impressum {
+/* DSGVO Page */
+main.datenschutz {
+    padding: 0 16px;
+    padding-bottom: 128px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 400px) {
+    .datenschutz h1 {
+        font-size: 7vw;
+    }
+}
+
+/* Interactions */
+a.floating {
     display: flex;
     position: fixed;
     bottom: 48px;
@@ -316,20 +331,21 @@ a.impressum {
     box-shadow: 1px 5px 10px 0px #1a2f844e;
     width: 64px;
     height: 64px;
-    padding: 8px;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
-a.impressum>.arrow-left-img {
-    width: 32px;
-    height: auto;
+a.floating:hover {
+    scale: 1.15;
+
+    i.fas {
+        scale: 1.5;
+    }
 }
 
-/* Impressum Page */
-main.datenschutz {
-    padding: 0 16px;
-    padding-bottom: 128px;
-    max-width: 720px;
-    margin: 0 auto;
+a.floating>i.fas {
+    color: var(--color-light-text);
+    font-size: 24px;
+    scale: 1.3;
 }
