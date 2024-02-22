@@ -111,7 +111,7 @@ p {
 
 /* Header Section */
 header {
-    padding: 16px;
+    padding: 16px 0;
     background-color: var(--color-primary);
 }
 
@@ -119,8 +119,13 @@ header {
     width: 210px;
 }
 
-/* Hero Section */
+header .img-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px
+}
 
+/* Hero Section */
 section#hero {
     margin: 48px auto 96px auto;
     padding: 0 16px 0 16px;
@@ -195,7 +200,7 @@ section#offer {
 
 .card-style {
     background-color: var(--color-background);
-    padding: 16px;
+    padding: 64px 16px;
     border-radius: 16px;
     max-width: 640px;
     margin: 0 auto 0 auto;
