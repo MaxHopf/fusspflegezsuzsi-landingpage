@@ -24,6 +24,9 @@ html {
     line-height: 24px;
     color: var(--color-default-text);
     background-color: var(--color-background);
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* General Typography */
