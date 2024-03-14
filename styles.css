@@ -85,10 +85,10 @@ p {
 }
 
 .center {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+    display: block !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    text-align: center !important;
 }
 
 .align-left {
@@ -351,4 +351,56 @@ a.floating>i.fas {
     color: var(--color-light-text);
     font-size: 24px;
     scale: 1.3;
+}
+
+
+
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copy-interaction:hover {
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.tooltip .tooltiptext {
+    font-size: 1rem;
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    position: relative;
+    z-index: 1;
+    bottom: 8px;
+    left: auto;
+    margin-left: 0px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
