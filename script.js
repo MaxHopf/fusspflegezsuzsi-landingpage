@@ -1,6 +1,7 @@
 
 const thisYear = document.querySelector("#thisYear").textContent = new Date().getFullYear();
 
+/*
 const phoneNumber = document.querySelector(`#phone-number`);
 
 phoneNumber.addEventListener('click', copyTextContent);
@@ -16,3 +17,4 @@ function copyTextContent() {
     tooltip.textContent = "Kopiert";
     navigator.clipboard.writeText(phoneNumber.textContent.replace(/\s/g, ''));
 }
+*/

@@ -99,6 +99,14 @@ p {
     line-height: 28px;
 }
 
+.contact-link {
+    color: var(--color-default-text);
+}
+
+a:hover {
+    color: var(--color-accent) !important;
+}
+
 /* Class for visually hide text for only screen readers to read */
 .sr-only {
     position: absolute;
@@ -313,8 +321,9 @@ div#impressum-contact {
 main.datenschutz {
     padding: 0 16px;
     padding-bottom: 128px;
-    max-width: 720px;
     margin: 0 auto;
+    max-width: 75ch;
+
 }
 
 @media screen and (max-width: 400px) {
