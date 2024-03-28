@@ -61,6 +61,10 @@ p {
     margin-bottom: 0;
 }
 
+br {
+    content: "";
+}
+
 /* Global Classes */
 .caption {
     font-size: 14px;
@@ -120,7 +124,21 @@ a:hover {
     border: 0;
 }
 
+hr {
+    width: max-content;
+    margin: auto;
+}
+
 /* Header Section */
+
+.headline {
+    margin-bottom: 1.5rem;
+}
+
+.headline h1 {
+    margin-bottom: 0.5rem;
+}
+
 header {
     padding: 16px 0;
     background-color: var(--color-primary);
