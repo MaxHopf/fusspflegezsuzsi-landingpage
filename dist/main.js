@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("#thisYear").textContent=(new Date).getFullYear()})();
